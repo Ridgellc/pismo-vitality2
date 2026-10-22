@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pismo Vitality | Your visit, start to finish</title>
+<meta name="description" content="Pismo Vitality, Dr. Wendy Weiss, D.O., 575 Price Street, Pismo Beach. Walk through your visit: the treatment, the time in the chair and when you'll see results.">
+<link rel="icon" href="images/pismo_logo_rose300x299.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#visit">Skip to your visit</a>
+
+<header class="top">
+  <a class="logo" href="#top" aria-label="Pismo Vitality home">
+    <img src="images/pismo_logo_rose300x299.png" alt="" width="40" height="40">
+    <span>Pismo Vitality</span>
+  </a>
+  <a class="top-call" href="tel:+18057730707">(805) 773-0707</a>
+  <a class="btn btn-small" href="#book">Request<span class="long">&nbsp;an appointment</span></a>
+</header>
+
+<main id="top">
+
+  <section class="intro">
+    <img class="intro-bg" src="images/pier.jpg" alt="Pismo Beach pier lit up at sunset">
+    <div class="intro-copy">
+      <p class="intro-kicker">Pismo Vitality, Dr. Wendy Weiss, D.O.</p>
+      <h1>Your visit,<br>start to finish.</h1>
+      <p class="intro-lead">Tell us what you'd like to change. We'll walk you through it, from our front door on Price Street to the day you see the difference.</p>
+      <fieldset class="concerns" id="concerns">
+        <legend>What would you like to change?</legend>
+        <div class="concern-grid"></div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="plan-pill" hidden>
+    <span>Your visit: <b class="plan-name"></b></span>
+    <button type="button" class="plan-change">Change</button>
+  </div>
+
+  <div class="visit" id="visit">
+    <nav class="rail" aria-label="Steps of your visit">
+      <p class="rail-title">Your visit</p>
+      <ol>
+        <li><a href="#step-1"><span class="rail-dot"></span>You walk in</a></li>
+        <li><a href="#step-2"><span class="rail-dot"></span>You meet Dr. Weiss</a></li>
+        <li><a href="#step-3"><span class="rail-dot"></span>Your treatment</a></li>
+        <li><a href="#step-4"><span class="rail-dot"></span>Afterward</a></li>
+        <li><a href="#book"><span class="rail-dot"></span>Book it</a></li>
+      </ol>
+      <span class="rail-line" aria-hidden="true"><span class="rail-fill"></span></span>
+    </nav>
+
+    <div class="steps">
+
+      <section class="step" id="step-1">
+        <p class="step-num">Step 1</p>
+        <h2>You walk in.</h2>
+        <div class="step-split">
+          <div>
+            <p class="big">575 Price Street, Suite 101, in Pismo Beach. Just call or send a request, and the office sets up your time.</p>
+            <p class="today" id="today"></p>
+            <ul class="hours" id="hours"></ul>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=575+Price+Street+Suite+101+Pismo+Beach+CA+93449" target="_blank" rel="noopener">Get directions</a></p>
+          </div>
+          <figure class="frame frame-wide">
+            <img src="images/pier.jpg" alt="The Pismo Beach pier at dusk" loading="lazy">
+          </figure>
+        </div>
+      </section>
+
+      <section class="step" id="step-2">
+        <p class="step-num">Step 2</p>
+        <h2>You meet Dr. Weiss.</h2>
+        <div class="step-split">
+          <figure class="frame frame-portrait">
+            <img src="images/dr-weiss-crop-u11221.jpg" alt="Dr. Wendy Weiss, D.O." loading="lazy">
+          </figure>
+          <div>
+            <p class="big">Dr. Weiss has been the resident physician at Pismo Family Practice since 1995 and began practicing aesthetic medicine in 2008.</p>
+            <p>She routinely attends advanced training and works with state of the art equipment. At your consultation you talk through <span class="plan-inline">what you'd like to change</span>, and she tailors the plan to you.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="step" id="step-3">
+        <p class="step-num">Step 3</p>
+        <h2 class="t-title">Your treatment.</h2>
+        <div class="step-split">
+          <div>
+            <p class="big t-lead"></p>
+            <dl class="facts t-facts"></dl>
+            <p class="also t-also" hidden></p>
+            <p><a class="t-link" href="https://ridgellc.github.io/pismo-vitality/treatments/">Read the full treatment page</a></p>
+          </div>
+          <figure class="frame frame-ba">
+            <img class="t-img" src="" alt="" loading="lazy">
+            <figcaption class="t-cap">Individual results may vary.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="step" id="step-4">
+        <p class="step-num">Step 4</p>
+        <h2>Afterward.</h2>
+        <ol class="timeline t-timeline"></ol>
+        <p class="vary">Individual results may vary.</p>
+        <aside class="special" hidden>
+          <p><b>This month:</b> buy two FUSION treatments, get one free.</p>
+        </aside>
+      </section>
+
+      <section class="step step-book" id="book">
+        <p class="step-num">Step 5</p>
+        <h2>Book it.</h2>
+        <p class="big">Send a request and the office will call you to set up your consultation. Or call us at <a href="tel:+18057730707">(805) 773-0707</a>.</p>
+
+        <form id="request-form" class="form" data-form-key="c12395a1-3fc8-42ef-b7e6-a596f1d17529" data-subject="New appointment request" novalidate>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <div class="form-grid">
+            <div class="field full"><label for="rq-name">Full name</label><input id="rq-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="rq-phone">Phone number</label><input id="rq-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="rq-email">Email</label><input id="rq-email" name="email" type="email" autocomplete="email"></div>
+            <fieldset class="field full"><legend>Preferred contact</legend><div class="pills">
+              <label><input type="radio" name="contact" value="Phone" checked><span>Phone</span></label>
+              <label><input type="radio" name="contact" value="Email"><span>Email</span></label></div></fieldset>
+            <div class="field full"><label for="rq-treatment">Treatment of interest</label><select id="rq-treatment" name="treatment"></select></div>
+            <fieldset class="field full"><legend>Preferred days</legend><div class="pills">
+              <label><input type="checkbox" name="days" value="Monday"><span>Mon</span></label>
+              <label><input type="checkbox" name="days" value="Tuesday"><span>Tue</span></label>
+              <label><input type="checkbox" name="days" value="Wednesday"><span>Wed</span></label>
+              <label><input type="checkbox" name="days" value="Thursday"><span>Thu</span></label>
+              <label><input type="checkbox" name="days" value="Friday"><span>Fri</span></label></div></fieldset>
+            <fieldset class="field full"><legend>Preferred time</legend><div class="pills">
+              <label><input type="radio" name="time" value="Morning"><span>Morning</span></label>
+              <label><input type="radio" name="time" value="Afternoon"><span>Afternoon</span></label>
+              <label><input type="radio" name="time" value="Any time" checked><span>Any time</span></label></div></fieldset>
+            <div class="field full"><label for="rq-notes">Comments</label><textarea id="rq-notes" name="comments" rows="3"></textarea>
+              <p class="form-note">Please don't include personal medical information. We'll go over everything at your consultation.</p></div>
+          </div>
+          <button class="btn" type="submit">Send request</button>
+          <p class="form-error" role="alert" hidden>That didn't go through. Please try again or call us at <a href="tel:+18057730707">(805) 773-0707</a>.</p>
+        </form>
+        <div class="done" id="request-done" hidden tabindex="-1">
+          <h3>Request sent<span class="done-name"></span>.</h3>
+          <p>The office will call you to set up your consultation. Questions before then? Call (805) 773-0707.</p>
+        </div>
+
+        <p class="finance">Financing: CareCredit offers no interest if paid in full on 6 and 12 month plans for purchases of $200 or more, subject to credit approval. LendingUSA is also available. Ask the office for details.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div>
+    <p><b>Pismo Vitality</b><br>575 Price Street, Suite 101<br>Pismo Beach, CA 93449</p>
+    <p><a href="tel:+18057730707">(805) 773-0707</a><br><a href="https://www.facebook.com/PismoVitality" target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+  <p class="foot-note">Design sample 2. This site is for general information and is not a substitute for medical advice.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
